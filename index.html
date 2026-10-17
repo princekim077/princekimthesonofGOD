@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sunglass Shop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Sunglass Shop</h1>
+      <nav>
+        <button id="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Stylish sunglasses & shades — free shipping over $50</h2>
+      <p>Shop our curated collection of classic and modern frames.</p>
+    </section>
+
+    <section id="products" class="product-grid" aria-live="polite">
+      <!-- products injected by script -->
+    </section>
+  </main>
+
+  <div id="cart-modal" class="cart-modal" aria-hidden="true">
+    <div class="cart-panel">
+      <button id="close-cart" class="close">✕</button>
+      <h3>Your Cart</h3>
+      <ul id="cart-items"></ul>
+      <div class="cart-footer">
+        <div>Total: $<span id="cart-total">0.00</span></div>
+        <button id="checkout-btn" class="primary">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer container">
+    <p>&copy; <span id="year"></span> Sunglass Shop — Built with ❤️</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
